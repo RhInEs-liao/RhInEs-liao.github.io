@@ -1,0 +1,2486 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.2"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            面向对象实验报告 | 
+        
+        RhInEs&#39; Blog
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+            
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-image: url(/img/bg.png);
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="RhInEs&#39; Blog">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2020/07/05/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="RhInEs&#39; Blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com/2020/07/05/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="面向对象实验报告 | RhInEs&#39; Blog">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    
+
+    
+        <meta property="article:published_time" content="Sun Jul 05 2020 17:52:55 GMT+0800">
+        <meta property="article:modified_time" content="Sun Jul 05 2020 17:42:19 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://yoursite.com/2020/07/05/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2020/07/05/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/index.html",
+    "headline": "面向对象实验报告",
+    "datePublished": "Sun Jul 05 2020 17:52:55 GMT+0800",
+    "dateModified": "Sun Jul 05 2020 17:42:19 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "RhInEs-liao",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Welcome Back"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "RhInEs&#39; Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+        <script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?23441adbeed105946e5a776e58b78589';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                面向对象实验报告
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>RhInEs-liao</strong>
+        <span>7月 05, 2020</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="https://pan.baidu.com/share/qrcode?w=246&h=246&url=http://yoursite.com/2020/07/05/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=面向对象实验报告&url=http://yoursite.com/2020/07/05/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=面向对象实验报告&url=http://yoursite.com/2020/07/05/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/index.html&via=RhInEs-liao" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=RhInEs&#39; Blog&title=面向对象实验报告&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2020/07/05/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>面向对象实验报告</p>
+<pre><code class="c++">/*  RhInEs_liao  */
+#include &lt;iostream&gt;  
+#include &lt;cstdio&gt;  
+#include &lt;cmath&gt;  
+#include &lt;cstring&gt;
+#include &lt;string.h&gt;
+#include &lt;algorithm&gt;  
+#include&lt;iomanip&gt;
+#include &lt;iterator&gt;
+#include&lt;fstream&gt;
+#include&lt;map&gt;
+#include&lt;string&gt;
+#include&lt;set&gt;
+using namespace std;
+
+//综合应用程序CMat类
+
+template&lt;typename T&gt;
+class CMat {
+private:
+    int row; //行
+    int col; //列
+    T* data; //指向数据的一维指针
+public:
+    CMat();
+    CMat(int r, int c, int value);
+    CMat(int r, int c, T* arr);
+    CMat(int r, int c);
+    CMat(const CMat&amp; M);
+    ~CMat();
+    void printMat() const;
+    void saveMat(const char* filename);
+    void loadMat(const char* filename);
+    int getRows() const;
+    int getCols() const;
+    bool isSquare() const;
+    void reSize(int p, int q);
+    T  operator () (int r,int c);
+    CMat&lt;T&gt; operator +(const CMat&lt;T&gt;M1);
+    CMat&lt;T&gt; operator -(const CMat&lt;T&gt;M1);
+    friend CMat&lt;T&gt; operator *(const CMat&lt;T&gt;M1, const CMat&lt;T&gt;M2) {
+        {
+            if (M1.col * M1.row == 0 || M2.col * M2.row == 0 || M1.col != M2.row) {
+                cout &lt;&lt; &quot;数据非法&quot; &lt;&lt; &#39;\n&#39;;
+                CMat&lt;T&gt; temp(0, 0, 0);
+                temp.data = nullptr;
+                return temp;
+            }
+            else {
+                int r3 = M1.row;
+                int c3 = M2.col;
+                T* arr = nullptr;
+                CMat&lt;int&gt; ans(r3, c3, arr);
+                for (int i = 0; i &lt; M1.row; i++) {
+                    for (int j = 0; j &lt; M2.col; j++) {
+                        ans.data[i * M2.col + j] = 0;
+                        for (int k = 0; k &lt; M1.col; k++) {
+                            ans.data[i * M2.col + j] += M1.data[i * M1.col + k] * M2.data[k * M2.col + j];
+                        }
+                    }
+                }
+                return ans;
+            }
+        }
+    }
+    bool operator !=(CMat&lt;T&gt;&amp;M);
+    bool operator ==(CMat&lt;T&gt;&amp;M);
+    CMat&lt;T&gt; operator=(const CMat&lt;T&gt; M); 
+    CMat&lt;T&gt; fetchRow(int i);
+    CMat&lt;T&gt; fetchCol(int i);
+    void swapRows(int a,int b);
+    void swapCols(int a,int b);
+    static CMat&lt;T&gt; createEyeMat(int n) {
+        CMat&lt;int&gt; MatI(n, n, 0);
+        for (int i = 0; i &lt; n * n; i += (n + 1)) {
+            MatI.data[i] = 1;
+        }
+        return MatI;
+    }
+    static double detMat(const CMat&lt;T&gt;M,int n) {
+        double sum = 0;
+        if (n == 2) {
+            sum = M.data[0] * M.data[3] - M.data[1] * M.data[2];
+        }
+        else {
+            for (int i = 0; i &lt; n; i++) {
+                T* arr = new T[(n - 1) * (n - 1)];
+                CMat&lt;T&gt; temp(n - 1, n - 1, arr);
+                for (int j = 0; j &lt; n - 1; j++) {
+                    for (int k = 0; k &lt; n - 1; k++) {
+                        temp.data[j * (n - 1) + k] = M.data[(j + 1) * (n - 1) + (k &lt; i ? k : k + 1)];
+                    }
+                }
+                if (M.data[i]) {
+                    sum += M.data[i] * detMat(temp, n - 1) * (((2 + i) % 2) ? -1 : 1);
+                }
+            }
+        }
+        return sum;
+    }
+    static CMat&lt;T&gt; convMat(CMat&lt;T&gt; M1, CMat&lt;T&gt; M2) {
+        int n = M1.row;//被卷矩阵规模 n*n
+        int f = M2.row;//卷积核规模 f*f
+        int p = (f - 1) / 2;//卷积填充维度
+        int s = (n + 2 * p - f) / (n - 1);//步长
+        CMat&lt;T&gt; M3(n, n, 0);
+        CMat&lt;T&gt; M4(n + f - 1, n + f - 1, 0);
+        //same输出格式;
+        //M3.row==M1.row,M3.col==M1.col,用n代替ANS的行列信息；
+        //填充：
+        for (int i = 0; i &lt; M1.row; i++) {
+            for (int j = 0; j &lt; M1.col; j++) {
+                (M4.data + (i + p) * M4.col)[j + p] = (M1.data + i * n)[j];
+            }
+        }
+        //卷积：
+        for (int i = 0; i &lt; n; i++) {
+            for (int j = 0; j &lt; n; j++) {
+                for (int k = 0; k &lt; f; k++) {
+                    for (int z = 0; z &lt; f; z++) {
+                        (M3.data + i * n)[j] += (M4.data + (i + k) * M4.col)[j + z] * (M2.data + k * M2.col)[z];
+                    }
+                }
+            }
+        }
+        return M3;
+    }
+};
+template&lt;typename T&gt;
+CMat&lt;T&gt;::CMat() {
+    row = 0;
+    col = 0;
+}
+template&lt;typename T&gt;
+CMat&lt;T&gt;::CMat(int r, int c, int value) {
+    row = r;
+    col = c;
+    data = new T[r * c];
+    for (int i = 0; i &lt; r*c; i++) {
+        data[i] = value;
+    }
+}
+template&lt;typename T&gt;
+CMat&lt;T&gt;::CMat(int r, int c, T* arr) {
+    row = r;
+    col = c;
+    arr = new T[r * c];
+    for (int i = 0; i &lt; r * c; i++) {
+        arr[i] = 1;
+    }
+    data = arr;
+}
+template&lt;typename T&gt;
+CMat&lt;T&gt;::CMat(int r, int c) {
+    row = r;
+    col = c;
+    data = new T[r * c];
+    for (int i = 0; i &lt; r*c; i++) {
+        cin &gt;&gt; data[i];
+    }
+}
+template&lt;typename T&gt;
+CMat&lt;T&gt;::~CMat() {
+    delete[]data;
+    data = nullptr;
+}
+template&lt;typename T &gt;
+CMat&lt;T&gt;::CMat(const CMat&amp; M) {
+    row = M.row; 
+    col = M.col;
+    data = new T[M.row * M.col];
+    for (int i = 0; i &lt; M.row * M.col; i++) {
+        data[i] = M.data[i];
+    }
+}
+template&lt;typename T&gt;
+void CMat&lt;T&gt;::printMat()const {
+    for (int i = 0; i &lt; row*col; i++) {
+        cout &lt;&lt; data[i] &lt;&lt; &quot; &quot;;
+        if ((i + 1) % col == 0) {
+            cout &lt;&lt; &#39;\n&#39;;
+        }
+    }
+}
+template&lt;typename T&gt;
+void CMat&lt;T&gt;::saveMat(const char* filename) {
+    ofstream input;
+    input.open(filename, ios::out);
+    if (!input) {
+        cout &lt;&lt; &quot;文件打开失败&quot;&lt;&lt;&#39;\n&#39;;
+    }
+    for (int i = 0; i &lt; col*row; i++) {
+        input &lt;&lt; data[i] &lt;&lt; &quot; &quot;;
+        if ((i + 1) % col == 0) {
+            input &lt;&lt; &#39;\n&#39;;
+        }
+    }
+    input.close();
+}
+template&lt;typename T&gt;
+void CMat&lt;T&gt;::loadMat(const char* filename) {
+    ifstream fin(filename,ios::in);
+    string str1;
+
+    int old_col = 0;
+    int row1 = 0;
+    int new_col = 0;
+    if (!fin)cout &lt;&lt; &quot;error&quot; &lt;&lt; &#39;\n&#39;;
+    while (getline(fin, str1)) {
+        new_col = 0;
+        row1++;
+        for (int i = 0; i &lt; str1.size(); i++) {
+            while (str1[i] != &#39; &#39; &amp;&amp; i &lt; str1.size()) {
+                i++;
+            }
+            new_col++;
+        }
+        if (old_col != 0 &amp;&amp; old_col != new_col) {
+            cout &lt;&lt; &quot;矩阵错误&quot; &lt;&lt; &#39;\n&#39;;
+            return;
+        }
+        old_col = new_col;
+    }
+    fin.close();
+    fin.open(filename);
+    col = old_col;
+    row = row1;
+    data = new T[row * col];
+    T t;
+    T* temp = data;
+    while (fin &gt;&gt; t) {
+        *temp = t;
+        temp++;
+    }
+
+    cout &lt;&lt; &quot;提取的矩阵为：&quot; &lt;&lt; &#39;\n&#39;;
+    for (int i = 0; i &lt; row * col; i++) {
+
+        cout &lt;&lt; data[i] &lt;&lt; &quot; &quot;;
+        if ((i + 1) % col == 0) {
+            cout &lt;&lt; &#39;\n&#39;;
+        }
+    }
+    fin.close();
+}
+template&lt;typename T&gt;
+int CMat&lt;T&gt;::getRows()const {
+    return row;
+}
+template&lt;typename T&gt;
+int CMat&lt;T&gt;::getCols()const {
+
+    return col;
+}
+template&lt;typename T&gt;
+bool CMat&lt;T&gt;::isSquare()const {
+    if (row == col) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+template&lt;typename T&gt;
+void CMat&lt;T&gt;::reSize(int p, int q) {
+
+    if (p * q == row * col) {
+        T* temp;
+        temp = new T[q * p];
+        for (int i = 0; i &lt; q * p; i++) {
+            temp[i] = data[i];
+        }
+        delete[]data;
+        data = temp;
+        row = p;
+        col = q;
+    }
+    else {
+        cout &lt;&lt; &quot;无法进行resize&quot; &lt;&lt; &#39;\n&#39;;
+    }
+}
+template&lt;typename T&gt;
+T CMat&lt;T&gt;::operator ()(int r, int c) {
+    if (r + 1 &lt;= row &amp;&amp; c + 1 &lt;= col) {
+        return*(data + r * c);
+    }
+    else {
+        cout &lt;&lt; &quot;行列超出范围,将返回-1。&quot; &lt;&lt; &#39;\n&#39;;
+        return -1;
+    }
+}
+template&lt;typename T&gt;
+CMat&lt;T&gt; CMat&lt;T&gt;::operator +(const CMat&lt;T&gt;M1) {
+    if (col != M1.col || row != M1.row) {
+        cout &lt;&lt; &quot;行列不一致无法运算&quot; &lt;&lt; &#39;\n&#39;;
+        CMat&lt;T&gt; temp(0, 0);
+        temp.data = nullptr;
+        return temp;
+    }
+    else {
+        CMat&lt;int&gt;M3(row,col,0);
+        for (int i = 0; i &lt; row * col; i++) {
+            M3.data[i] = this-&gt;data[i] + M1.data[i];
+        }
+        return M3;
+    }
+}
+template&lt;typename T&gt;
+CMat&lt;T&gt; CMat&lt;T&gt;::operator -(const CMat&lt;T&gt;M1) {
+    if (col != M1.col || row != M1.row) {
+        cout &lt;&lt; &quot;行列不一致无法运算&quot; &lt;&lt; &#39;\n&#39;;
+        CMat&lt;T&gt; temp(0, 0);
+        temp.data = nullptr;
+        return temp;
+    }
+    else {
+        CMat&lt;int&gt;M3(row, col, 0);
+        for (int i = 0; i &lt; row * col; i++) {
+            M3.data[i] = this-&gt;data[i] - M1.data[i];
+        }
+        return M3;
+    }
+}
+template&lt;typename T&gt;
+CMat&lt;T&gt; operator*(const CMat&lt;T&gt;obj1, T a) {
+    CMat&lt;T&gt;temp(obj1.row, obj1.col, obj1.data);
+    for (int i = 0; i &lt; temp.col; i++) {
+        temp.data[i] = temp.data[i] * a;
+    }
+    return temp;
+}
+template&lt;typename T&gt;
+CMat&lt;T&gt; operator * (const CMat&lt;T&gt; M1, const CMat&lt;T&gt; M2);
+template&lt;typename T&gt;
+bool CMat&lt;T&gt;::operator ==(CMat&lt;T&gt;&amp; M) {
+
+    for (int i = 0; i &lt; row * col; i++) {
+        if (data[i] != M.data[i]) {
+            return 0;
+        }
+    }
+    return 1;
+}
+template&lt;typename T&gt;
+bool CMat&lt;T&gt;::operator !=(CMat&lt;T&gt;&amp; M) {
+    bool flag = 0;
+    for (int i = 0; i &lt; row * col; i++) {
+        if (data[i] != M.data[i]) {
+            flag= 1;
+        }
+    }
+    return flag;
+}
+template&lt;typename T&gt;
+CMat&lt;T&gt; CMat&lt;T&gt;::operator=(const CMat&lt;T&gt;M)
+{
+    if (this-&gt;data != NULL) {
+        delete[]this-&gt;data;
+        row = 0;
+        col = 0;
+    }
+    data = new T[M.col * M.row];
+    row = M.row;
+    col = M.col;
+    for (int i = 0; i &lt; M.col * M.row; i++)
+    {
+        this-&gt;data[i] = M.data[i];
+    }
+    return *this;
+}
+template&lt;typename T&gt;
+CMat&lt;T&gt; CMat&lt;T&gt;::fetchRow(int i) {
+    CMat&lt;T&gt; temp(1, col,0);
+    for (int j = i * col,k=0; j &lt; (i + 1) * col; j++,k++) {
+        temp.data[k] = data[j];
+    }
+    return temp;
+
+}
+template&lt;typename T&gt;
+CMat&lt;T&gt; CMat&lt;T&gt;::fetchCol(int i) {
+    CMat&lt;T&gt; temp(1, row,0);
+    for (int j = i, k = 0; j &lt; row*col; j+=col, k++) {
+        temp.data[k] = data[j];
+    }
+    return temp;
+
+}
+template&lt;typename T&gt;
+void CMat&lt;T&gt;::swapRows(int a, int b) {
+    if (a &lt; row &amp;&amp; b &lt; row &amp;&amp; a &gt;= 0 &amp;&amp; b &gt;= 0) {
+        T* temp = new T[col];
+        for (int i = 0; i &lt; col; i++) {
+            temp[i] = fetchRow(b).data[i];
+        }
+        for (int i = 0; i &lt; col; i++) {
+            data[b * col + i] = data[a * col + i];
+        }
+        for (int i = 0; i &lt; col; i++) {
+            data[a * col + i] = temp[i];
+        }
+    }
+    else
+    {
+        cout &lt;&lt; &quot;超出交换范围&quot; &lt;&lt; endl;
+    }
+}
+template&lt;typename T&gt;
+void  CMat&lt;T&gt;::swapCols(int a, int b) {
+    if (a &lt; col &amp;&amp; b &lt; col) {
+        T* temp = new T[row];
+        for (int i = 0; i &lt; row; i++) {
+            temp[i] = fetchCol(b).data[i];
+        }
+        for (int i = 0; i &lt; row; i++) {
+            data[b + i * col] = data[a + i * col];
+        }
+        for (int i = 0; i &lt; row; i++) {
+            data[a + i * col] = temp[i];
+        }
+    }
+    else {
+        cout &lt;&lt; &quot;超出交换范围&quot; &lt;&lt; endl;
+    }
+}
+int main() {
+    cout &lt;&lt; &quot;构造函数：&quot; &lt;&lt; &#39;\n&#39;;
+    CMat&lt;int&gt;M1(3, 2, 2);
+    cout &lt;&lt; &quot;矩阵M1：&quot; &lt;&lt; &#39;\n&#39;;
+    M1.printMat();
+    CMat&lt;int&gt;M2(2,3);
+    cout &lt;&lt; &quot;矩阵M2：&quot; &lt;&lt; &#39;\n&#39;;
+    M2.printMat();
+    int* arr = nullptr;
+    CMat&lt;int&gt;M3(2, 3, arr);
+    cout &lt;&lt; &quot;矩阵M3：&quot; &lt;&lt; &#39;\n&#39;;
+    M3.printMat();
+
+    cout &lt;&lt; &quot;***************************************************&quot; &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt; &quot;调用getRows、getCols()、isSquare()、reSize函数&quot; &lt;&lt; endl;
+    cout &lt;&lt; &quot;矩阵M1列数row=&quot; &lt;&lt; M1.getCols() &lt;&lt; endl;
+    cout &lt;&lt; &quot;矩阵M1行数col=&quot; &lt;&lt; M1.getRows() &lt;&lt; endl;
+    cout &lt;&lt; &quot;矩阵M1是否为方阵:&quot; &lt;&lt; M1.isSquare() &lt;&lt; endl;
+    cout &lt;&lt; &quot;矩阵M2 resize前：&quot; &lt;&lt; endl;
+    M2.printMat();
+    cout &lt;&lt; &quot;矩阵M2 resize后：&quot; &lt;&lt; endl;
+    M2.reSize(3, 2);
+    M2.printMat();
+    M2.reSize(2, 3);//恢复原样;*/
+
+    cout &lt;&lt; &quot;***************************************************&quot; &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt;&quot;重载运算符函数：（）、+、-、*、==、！=&quot; &lt;&lt; &#39;\n&#39;;
+    CMat&lt;int&gt;ans(1, 1, 0);
+    cout &lt;&lt; &quot;M1矩阵如下:&quot; &lt;&lt; &#39;\n&#39;;
+    M1.printMat();
+    cout &lt;&lt; &quot;M2矩阵如下:&quot; &lt;&lt; &#39;\n&#39;;
+    M2.printMat();
+    cout &lt;&lt; &quot;输入行数列数，获取M1矩阵的元素：&quot;;
+    int r, c;
+    cin &gt;&gt; r &gt;&gt; c;
+    cout &lt;&lt; &quot;M2矩阵的第&quot; &lt;&lt; r &lt;&lt; &quot;行&quot; &lt;&lt; c &lt;&lt; &quot;列元素：&quot; &lt;&lt; M2(r, c) &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt; &quot;矩阵2与矩阵3相加后，结果如下&quot; &lt;&lt; &#39;\n&#39;;
+    ans = M2 + M3;
+    ans.printMat();
+    cout &lt;&lt; &quot;矩阵2与矩阵3相减后，结果如下&quot; &lt;&lt; &#39;\n&#39;;
+    ans = M2 - M3;
+    ans.printMat();
+    cout &lt;&lt; &quot;矩阵1与矩阵2相乘后，结果如下&quot; &lt;&lt; &#39;\n&#39;;
+    ans = M1 * M2;
+    ans.printMat();
+    cout &lt;&lt; &quot;判断矩阵1与矩阵2是否相等&quot; &lt;&lt; &#39;\n&#39;;
+    if (M1 == M2) {
+        cout &lt;&lt; &quot;相等&quot; &lt;&lt; &#39;\n&#39;;
+    }
+    else cout &lt;&lt; &quot;不等&quot; &lt;&lt; &#39;\n&#39;;
+
+    cout &lt;&lt; &quot;***************************************************&quot; &lt;&lt; &#39;\n&#39;;
+
+    cout &lt;&lt; &quot;fetch函数、swap函数功能测试：&quot; &lt;&lt; &#39;\n&#39;;
+    CMat&lt;int&gt;temp1(1, 1, 0);
+    cout &lt;&lt; &quot;M2矩阵的第0行：&quot;;
+    temp1 = M2.fetchRow(0);
+    temp1.printMat();
+    cout &lt;&lt; &quot;M2矩阵的第1列：&quot;;
+    temp1 = M2.fetchCol(1);
+    temp1.printMat();
+    cout &lt;&lt; &quot;交换矩阵M2的第0行和第1行&quot; &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt; &quot;交换前：&quot; &lt;&lt; &#39;\n&#39;;
+    M2.printMat();
+    cout &lt;&lt; &quot;交换后：&quot; &lt;&lt; &#39;\n&#39;;
+    M2.swapRows(0, 1);
+    M2.printMat();
+    cout &lt;&lt; &quot;交换矩阵M2的第0列和第2列&quot; &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt; &quot;交换前：&quot; &lt;&lt; &#39;\n&#39;;
+    M2.printMat();
+    cout &lt;&lt; &quot;交换后：&quot; &lt;&lt; &#39;\n&#39;;
+    M2.swapCols(0, 2);
+    M2.printMat();
+    cout &lt;&lt; &quot;***************************************************&quot; &lt;&lt; &#39;\n&#39;;
+
+    cout &lt;&lt; &quot;createEyeMat,detMat函数功能测试：&quot; &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt; &quot;输入单位矩阵的阶数：&quot;;
+    int n;
+    cin &gt;&gt; n;
+    CMat&lt;int&gt;M4(n, n, 0);
+    M4=CMat&lt;int&gt;::createEyeMat(n);
+    cout &lt;&lt; n &lt;&lt; &quot;阶单位矩阵：&quot; &lt;&lt; &#39;\n&#39;;
+    M4.printMat();
+    cout &lt;&lt; &quot;detMat计算行列式&quot; &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt; &quot;输入矩阵M5的4*4个元素：&quot;;
+    CMat&lt;double&gt;M5(4, 4);
+    cout &lt;&lt; &quot;结果:&quot; &lt;&lt; CMat&lt;double&gt;::detMat(M5, 4) &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt; &quot;***************************************************&quot; &lt;&lt; &#39;\n&#39;;
+
+    cout &lt;&lt; &quot;saveMat函数、loadMat函数功能测试：&quot; &lt;&lt; &#39;\n&#39;;
+    CMat&lt;double&gt;M6(3, 3);
+    char* file1, * file2;
+    file1 = new char[40];
+    file2 = new char[40];
+    cout &lt;&lt; &quot;输入保留文件的名字&quot;;
+    cin &gt;&gt; file2;
+    M6.saveMat(file2);
+    cout &lt;&lt; &quot;输入读取文件的名字&quot;;
+    cin &gt;&gt; file1;
+    M6.loadMat(file1);
+    cout &lt;&lt; &quot;***************************************************&quot; &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt; &quot;convMat测试&quot; &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt; &quot;目标矩阵为&quot; &lt;&lt; endl;
+    M5.printMat();
+    cout &lt;&lt; &quot;卷积核为&quot; &lt;&lt; endl;
+    M6.printMat();
+    CMat&lt;double&gt;M7(4, 4, 1);
+    M7 = CMat&lt;double&gt;::convMat(M5, M6);
+    cout &lt;&lt; &quot;卷积计算结果为：&quot; &lt;&lt; endl;
+    M7.printMat();
+    cout &lt;&lt; &quot;***************************************************&quot; &lt;&lt; &#39;\n&#39;;
+    return 0;
+}
+
+
+
+//模版（1）
+
+template&lt;typename T1&gt;
+T1 MAX( T1 x, T1 y, T1 z) {
+    return (x &gt; y ? x : y) &gt; z ? (x &gt; y ? x : y) : z;
+}
+int main() {
+
+    double M1 = MAX&lt;double&gt;(-5.55, 0.55, 4.44);
+    char M2 = MAX&lt;char&gt;(&#39;a&#39;, &#39;z&#39;, &#39;A&#39;);
+    int M3 = MAX&lt;int&gt;(-100, 5, 0);
+    cout &lt;&lt; &quot;MAX(-5.55, 0.55, 4.44)=&quot; &lt;&lt; M1 &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt; &quot;MAX(&#39;a&#39;, &#39;z&#39;, &#39;A&#39;)=&quot; &lt;&lt; M2 &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt; &quot;MAX(-100, 5, 0)=&quot; &lt;&lt; M3 &lt;&lt; &#39;\n&#39;;
+    return 0;
+}
+
+
+//模版（2）
+
+template&lt;typename T1&gt;
+class Data {
+public:
+    Data(int i) {
+        size = i;
+        a = new T1[size];
+    }
+    virtual ~Data() {
+        delete[]a;
+    }
+    void showdata() {
+        for (int i = 0; i &lt; size; i++) {
+            cout &lt;&lt; a[i] &lt;&lt; &quot; &quot;;
+        }
+        cout &lt;&lt; &#39;\n&#39;;
+    }
+    void putdata(int i) {
+        cout &lt;&lt; a[i] &lt;&lt; &#39;\n&#39;;
+    }//功能1
+    void setdata(int index,int num) {
+        a[index] = num;
+    }//功能2
+    void insert(int index,T1 b) {
+        T1* temp3 = new T1[size+1];
+        for (int i = 0; i &lt;= index; i++) {
+                temp3[i] = a[i];
+        }
+        temp3[index + 1] = b;
+        for (int i = index + 2; i &lt; size+1; i++) {
+            temp3[i] = a[i - 1];
+        }
+
+        delete[]a;
+        a = temp3;
+        size++;
+
+
+    }//功能3(下标后插）
+    void remove(int index ) {
+        T1* temp4 = new T1[size - 1];
+
+        for (int i = 0; i &lt; index; i++) {
+            temp4[i] = a[i];
+        }//下标前面数据
+        for (int i = index; i &lt; size-1; i++) {
+            temp4[i] = a[i + 1];
+        }
+
+        delete[]a;
+        a = temp4;
+        size--;
+    }//功能4
+    void add(T1 b) {
+        T1* temp5 = new T1[size + 1];
+        for (int i = 0; i &lt; size; i++) {
+            temp5[i] = a[i];
+
+        }
+        temp5[size] = b;
+        delete[]a;
+        a = temp5;
+        size++;
+    }//功能5
+private:
+    int size;
+    T1* a;
+};
+int main() {
+    int len;
+    cout &lt;&lt; &quot;输入数组长度：&quot;;
+    cin &gt;&gt; len;
+    Data&lt;int&gt;Array(len);
+    int i;
+    for (int j = 0; j &lt; len; j++) {
+        cin &gt;&gt; i;
+        Array.setdata(j,i);
+    }
+
+    cout &lt;&lt; &quot;数组为：&quot;;
+    Array.showdata();
+    cout &lt;&lt; &quot;******************************************&quot; &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt; &quot;功能一：根据下标取数组元素的值，请输入下标：&quot;;
+    int index1;
+    cin &gt;&gt; index1;
+    cout &lt;&lt; &quot;该元素值为：&quot;;
+    Array.putdata(index1);//功能1
+    cout &lt;&lt; &quot;功能二：根据下标设置数组元素的值，请输入下标以及设置值：&quot;;
+    int index2,num1;
+    cin &gt;&gt; index2&gt;&gt;num1;
+    cout &lt;&lt; &quot;下标&quot; &lt;&lt; index2 &lt;&lt; &quot;原值为：&quot;;
+    Array.putdata(index2);
+    Array.setdata(index2, num1);
+    cout &lt;&lt; &quot;下标&quot; &lt;&lt; index2 &lt;&lt; &quot;设置后的值：&quot;;
+    Array.putdata(index2);
+    cout &lt;&lt; &quot;数组为：&quot;;
+    Array.showdata();
+
+    cout &lt;&lt; &quot;功能三:根据下标在指定位置插入数组元素,请输入下标和插入的元素：&quot;;
+    int index3, num2;
+    cin &gt;&gt; index3 &gt;&gt; num2;
+    Array.insert(index3, num2);
+    cout &lt;&lt; &quot;数组为：&quot;;
+    Array.showdata();
+    cout &lt;&lt; &quot;功能四:根据下标删除指定位置的数组元素,请输入下标：&quot;;
+    int index4;
+    cin &gt;&gt; index4;
+    Array.remove(index4);
+    cout &lt;&lt; &quot;数组为：&quot;;
+    Array.showdata();
+    cout &lt;&lt; &quot;功能五:在数组尾部增加元素，请要添加元素的个数：&quot;;
+    int count, tempnum;
+    cin &gt;&gt; count;
+    while (count--) {
+        cout &lt;&lt; &quot;输入要增加的元素：&quot;;
+        cin &gt;&gt; tempnum;
+        Array.add(tempnum);
+
+    }
+    cout &lt;&lt; &quot;数组为：&quot;;
+    Array.showdata();
+
+
+
+}
+
+
+//模版（3）
+
+typedef map&lt;string,set&lt;int&gt;&gt; maps;//map字典，键是单词，值是一个set容器（存储int类型,存储的是该单词所在的行数的集合）
+int main()
+{
+    maps ans; string word;
+    ifstream files(&quot;dict.txt&quot;);
+    int line = 0;
+    string dict = &quot;&quot;;
+    while (getline(files, word)){
+        for (int i = 0; i &lt; word.size(); i++)
+        {
+            if (word[i] != &#39; &#39;)dict += word[i];
+            else {
+                ans[dict].insert(line);
+                dict = &quot;&quot;;
+            }
+        }
+        //对该行最后一个
+        ans[dict].insert(line);
+        line++; dict = &quot;&quot;;
+    }
+    cout &lt;&lt; &quot;单词\t出现在第几行\n&quot;;
+    maps::iterator iter1;
+    iter1 = ans.begin();
+    while (iter1 != ans.end()) {
+        cout &lt;&lt; iter1-&gt;first &lt;&lt; &#39;\t&#39;;
+        for (set&lt;int&gt;::iterator iter2 = ans[iter1-&gt;first].begin(); iter2 != ans[iter1-&gt;first].end(); iter2++) {
+            cout &lt;&lt; *iter2 &lt;&lt; &quot; &quot;;
+        }
+
+        for (auto a : ans[iter1-&gt;first]) {
+            cout &lt;&lt; a &lt;&lt; &quot; &quot;;
+        }
+
+
+        cout &lt;&lt; &#39;\n&#39;;
+        iter1++;
+    }
+    files.close();//结束时关闭文件
+    return 0;
+}
+
+
+
+
+//继承与多态性(1)
+class Student {
+private:
+    string name;
+    long long number;
+    string school;
+public:
+    Student(string name1,long long num1,string school1): name(name1),number(num1),school(school1){}
+    //缺省↓
+    Student() {
+        name = &quot;RhInEs&quot;;
+        number = 1906100071;
+        school = &quot;Guangzhou University&quot;;
+    }
+    void print() {
+        cout &lt;&lt; &quot;————————————————&quot; &lt;&lt; &#39;\n&#39;;
+        cout &lt;&lt; &quot;学生信息： &quot; &lt;&lt; &#39;\n&#39;;
+        cout &lt;&lt; &quot;姓名: &quot; &lt;&lt; name &lt;&lt; &#39;\n&#39;;
+        cout &lt;&lt; &quot;学号: &quot; &lt;&lt; number &lt;&lt; &#39;\n&#39;;
+        cout &lt;&lt; &quot;学校: &quot; &lt;&lt; school &lt;&lt; &#39;\n&#39;;
+    }
+};
+class Postgraduate :public Student {
+private:
+    string study_direction;
+    string teacher;
+public:
+    Postgraduate(string name1,long long num1,string school1,string direction1,string teacher1)
+    :Student(name1,num1,school1),study_direction(direction1),teacher(teacher1){}
+    void print() {
+        cout &lt;&lt; &quot;————————————————&quot; &lt;&lt; &#39;\n&#39;;
+        cout &lt;&lt; &quot;研究生信息：&quot; &lt;&lt; &#39;\n&#39;;
+        cout &lt;&lt; &quot;研究方向:&quot; &lt;&lt; study_direction &lt;&lt; &#39;\n&#39;;
+        cout &lt;&lt; &quot;导师:&quot; &lt;&lt; teacher &lt;&lt; &#39;\n&#39;;
+    }
+
+};
+int main() {
+    Student stu1;
+    stu1.print();
+    Student stu2(&quot;Tom&quot;, 1906100999, &quot;GZHU&quot;);
+    stu2.print();
+    Postgraduate stu3(&quot;Jerry&quot;, 1906100111, &quot;GZHU&quot;, &quot;Computer Science&quot;, &quot;Jacky&quot;);
+    stu3.Student::print();
+    stu3.print();
+    return 0;
+}
+//继承与多态性(2)
+
+
+class Base {
+public:
+    virtual void area() {
+        //虚函数
+    }
+};
+class Triangle :public Base {
+public:
+    Triangle(double x,double y,double z):a(x),b(y),c(z){}
+    void area() {
+        double areas = 0;
+        int p = (this-&gt;a + this-&gt;b + this-&gt;c) / 2;
+        areas = sqrt(p * (p - this-&gt;a) * (p - this-&gt;b) * (p - this-&gt;c));
+        cout &lt;&lt; &quot;三角形面积是：&quot; &lt;&lt; areas &lt;&lt; &#39;\n&#39;;
+    }
+protected:
+    double a;
+    double b;
+    double c;
+
+};
+class Circle :public Base {
+public:
+    Circle(double n) :r(n){}
+    void area() {
+        double areas = 0;
+        areas = 3.14 * r * r;
+        cout &lt;&lt; &quot;圆形面积是：&quot; &lt;&lt; areas &lt;&lt; &#39;\n&#39;;
+    }
+protected:
+    double r;
+};
+int main() {
+    Base* s;
+    double x,a,b,c;
+    cout &lt;&lt; &quot;输入圆的半径，三角形的三条边,4个为0时停止计算。&quot; &lt;&lt; &#39;\n&#39;;
+    while (cin &gt;&gt; x &gt;&gt; a &gt;&gt; b &gt;&gt; c) {
+        if (x == 0&amp;&amp; 0== b&amp;&amp; 0== c&amp;&amp;a == 0) break;
+        s = new Circle(x);
+        s-&gt;area();
+        s = new Triangle(a, b, c);
+        s-&gt;area();
+    }
+    return 0;
+}
+
+
+//继承与多态性(3)
+
+class Employee {
+public:
+    virtual void display() = 0;
+    virtual void getWage() = 0;
+    Employee(double a) {
+        cout &lt;&lt; &quot; 输入编号： &quot; &lt;&lt; &#39;\n&#39;;
+        cin &gt;&gt; num;
+        cout &lt;&lt; &quot; 输入姓名： &quot; &lt;&lt; &#39;\n&#39;;
+        cin &gt;&gt; name;
+        money = a;
+    }
+protected:
+        int num;
+        string name;
+        double money;
+};
+//经理↓
+class Manager :public Employee {
+public:
+    Manager(double a):Employee(a){}
+    virtual void display() {
+        cout &lt;&lt; &quot; 编号:&quot; &lt;&lt; num &lt;&lt; &quot; &quot; &lt;&lt; &quot; 经理：&quot; &lt;&lt; name &lt;&lt; &#39;\n&#39;;
+
+    }
+    virtual void getWage() {
+        cout &lt;&lt; &quot; 月薪：&quot; &lt;&lt; money &lt;&lt; &#39;\n&#39;;
+    }
+};
+//兼职技术人员↓
+class Technician :public Employee {
+public:
+    Technician(double a) :Employee(a) {}
+    virtual void display() {
+        cout &lt;&lt; &quot; 编号:&quot; &lt;&lt; num &lt;&lt; &quot; &quot; &lt;&lt; &quot; 兼职技术人员：&quot; &lt;&lt; name &lt;&lt; &#39;\n&#39;;
+    }
+    virtual void getWage() {
+        cout &lt;&lt; &quot; 月薪：&quot; &lt;&lt; money &lt;&lt; &#39;\n&#39;;
+    }
+};
+//销售员↓
+class Saleman :public Employee {
+public:
+    Saleman(double a) :Employee(a) {}
+    virtual void display() {
+        cout &lt;&lt; &quot; 编号:&quot; &lt;&lt; num &lt;&lt; &quot; &quot; &lt;&lt; &quot; 销售员：&quot; &lt;&lt; name &lt;&lt; &#39;\n&#39;;
+    }
+    virtual void getWage() {
+        cout &lt;&lt; &quot; 月薪：&quot; &lt;&lt; money &lt;&lt; &#39;\n&#39;;
+    }
+};
+//销售经理↓
+class Salemanager :public Employee {
+public:
+    Salemanager(double a) :Employee(a) {}
+    virtual void display() {
+        cout &lt;&lt; &quot; 编号:&quot; &lt;&lt; num &lt;&lt; &quot; &quot; &lt;&lt; &quot; 销售经理：&quot; &lt;&lt; name &lt;&lt; &#39;\n&#39;;
+    }
+    virtual void getWage() {
+        cout &lt;&lt; &quot; 月薪：&quot; &lt;&lt; money &lt;&lt; &#39;\n&#39;;
+    }
+};
+class Node {
+public:
+    Employee&amp; temp;
+    Node* next, * pre;
+    Node(Employee &amp;x):temp(x),next(NULL),pre(NULL){}
+};
+class EmployeeList {
+private:
+    Node* head;
+    int sizenum;
+public:
+    EmployeeList() {
+        head = NULL;
+        sizenum = 0;
+    }
+    ~EmployeeList() {
+        Node* p=head;
+        for (; p = head; delete p) {
+            head = head-&gt;next;
+        }
+    }
+    void append(Employee &amp;x) {
+        Node* p = new Node(x);
+
+        if (head!=0) {
+            p-&gt;next = head;
+            head-&gt;pre = p;
+        }
+        head = p;
+        sizenum++;
+    }
+    void print() {
+        Node* p = head;
+        while (p != NULL) {
+            (p-&gt;temp).display();
+            (p-&gt;temp).getWage();
+            cout &lt;&lt; &quot;*****************&quot; &lt;&lt; &#39;\n&#39;;
+            p = p-&gt;next;
+        }
+    }
+};
+int main() {
+    EmployeeList pai;
+    Employee* m=NULL;
+    int i;
+    double a=8000.0, b=4000.0, c=6000.0, d=10000.0;
+    cout &lt;&lt; &quot;      职工信息查询     &quot; &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt; &quot;1------经理&quot; &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt; &quot;2------兼职技术人员&quot; &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt; &quot;3------销售员&quot; &lt;&lt; &#39;\n&#39;;
+    cout &lt;&lt; &quot;4------销售经理&quot; &lt;&lt; &#39;\n&#39;;
+    while (cin &gt;&gt; i) {
+
+        switch (i) {
+            case 1: {
+
+                m = new Manager(a);
+                pai.append(*m);
+                break;
+            }
+            case 2: {
+
+                m = new Technician(b);
+                pai.append(*m);
+                break;
+            }
+            case 3: {
+
+                m = new  Saleman(c);
+                pai.append(*m);
+                break;
+            }
+            case 4: {
+
+                m = new Salemanager(d);
+                pai.append(*m);
+                break;
+            }
+        }
+        cout &lt;&lt; &quot;=========================================&quot; &lt;&lt; &#39;\n&#39;;
+        pai.print();
+        delete m;
+        }
+    }
+
+
+
+
+
+    //重载运算符(3)
+
+    class Time {
+    private:
+        int hour;
+        int minute;
+        int second;
+    public:
+        bool flag;//判断合法性
+        Time():hour(0),minute(0),second(0),flag(1){}
+        friend ostream&amp; operator &lt;&lt;(ostream&amp; output, Time&amp;A) {
+            output &lt;&lt; A.hour &lt;&lt; &quot;:&quot; &lt;&lt; A.minute &lt;&lt; &quot;:&quot; &lt;&lt; A.second ;
+            return output;
+        }
+        friend istream&amp; operator &gt;&gt;(istream&amp; input, Time&amp; A) {
+            input &gt;&gt; A.hour &gt;&gt; A.minute &gt;&gt; A.second;
+            if (A.hour &lt; 0 || A.hour &gt; 59 || A.minute &lt; 0 || A.minute &gt; 59 || A.second &lt; 0 || A.second &gt; 59)
+            {
+                A.hour = 0, A.minute = 0, A.second = 0;
+                A.flag = 0;
+                cout &lt;&lt; &quot;时间输入不合法！&quot; &lt;&lt; &#39;\n&#39;;
+            }
+            return input;
+        }
+        friend bool operator &gt;(Time&amp; A, Time&amp; B) {
+            if (A.hour &gt; B.hour)
+                return true;
+            else if (A.hour == B.hour &amp;&amp; A.minute &gt; B.minute)
+                return true;
+            else if (A.minute == B.minute &amp;&amp; A.second &gt; B.second)
+                return true;
+            else
+                return false;
+        }
+        friend bool operator &lt;(Time&amp; A, Time&amp; B) {
+            if (A.hour &lt; B.hour)
+                return true;
+            else if (A.hour == B.hour &amp;&amp; A.minute &lt; B.minute)
+                return true;
+            else if (A.minute == B.minute &amp;&amp; A.second &lt; B.second)
+                return true;
+            else
+                return false;
+        }
+        friend bool operator ==(Time&amp; A, Time&amp; B) {
+            if (A.hour == B.hour &amp;&amp; A.minute == B.minute &amp;&amp; A.second == B.second) {
+                return true;
+            }
+            else
+                return false;
+        }
+        friend bool operator !=(Time&amp; A, Time&amp; B) {
+            if (A.hour == B.hour &amp;&amp; A.minute == B.minute &amp;&amp; A.second == B.second) {
+                return false;
+            }
+            else
+                return true;
+        }
+        Time operator +(int m) {
+            Time A;
+            int minutes;
+            m %= 1440;//预处理大于24小时的部分，余下24小时内的部分；
+            minutes = this-&gt;hour * 60 + this-&gt;minute; //将当前时间全部化为分钟
+            int temp1 = minutes + m;
+            A.hour = temp1 / 60;
+            A.minute = temp1 % 60;
+            A.second = this-&gt;second;
+            if (A.hour &gt;= 24) {
+                A.hour %= 24;
+            }
+            return A;
+        }
+        Time operator -(int m) {
+            Time A;
+            int minutes;
+            m %= 1440;//预处理大于24小时的部分，余下24小时内的部分；
+            minutes = this-&gt;hour * 60 + this-&gt;minute; //将当前时间全部化为分钟
+            int temp1 = minutes - m;
+            A.hour = temp1 / 60;
+            A.minute = temp1%60;
+            A.second = this-&gt;second;
+            if (A.minute &lt; 0) {
+                A.minute += 60;
+            }
+            if (A.hour &lt;= 0 &amp;&amp; temp1 &lt; 0) {
+                A.hour += 23;
+            }
+            return A;
+        }
+        Time operator++() {
+            hour++;
+            if (hour &gt;= 24) {
+                hour -= 24;
+            }
+            return *this;
+        }
+        Time operator--() {
+            hour--;
+            if (hour &lt; 0) {
+                hour += 24;
+            }
+            return *this;
+        }
+    };
+    int main() {
+        Time A,B,C;
+        string s2;
+        char s1;
+        int x;
+        cout &lt;&lt; &quot;输入&#39;#&#39;进入比较操作，输入&#39;$&#39;进入运算操作,输入&#39;%&#39;退出操作：&quot; &lt;&lt; &#39;\n&#39;;
+        while (cin &gt;&gt; s1&amp;&amp;s1!=&#39;%&#39;) {
+            //比较
+            if (s1 == &#39;#&#39;) {
+                cin &gt;&gt; A &gt;&gt; B;
+                if (A.flag == 0 || B.flag == 0) {
+                    cout &lt;&lt; &quot;请再次输入2个合法的时间！&quot; &lt;&lt; &#39;\n&#39;;
+                    A.flag = 1;
+                    B.flag = 1;
+                    continue;
+                }
+                cout &lt;&lt; &quot;*********************************&quot; &lt;&lt; &#39;\n&#39;;
+                if (A != B) {
+                    cout &lt;&lt; A &lt;&lt; &quot; &quot; &lt;&lt; &quot;不等于&quot; &lt;&lt; B &lt;&lt; &quot; &quot; &lt;&lt; &#39;\n&#39;;
+                    if (A &gt; B) {
+                        cout &lt;&lt; A &lt;&lt; &quot; &quot; &lt;&lt; &quot;大于&quot; &lt;&lt; B &lt;&lt; &quot; &quot; &lt;&lt; &#39;\n&#39;;
+                    }
+                    else if (A &lt; B) {
+                        cout &lt;&lt; A &lt;&lt; &quot; &quot; &lt;&lt; &quot;小于&quot; &lt;&lt; B &lt;&lt; &quot; &quot; &lt;&lt; &#39;\n&#39;;
+                    }
+                }
+                else {
+                    cout &lt;&lt; A &lt;&lt; &quot; &quot; &lt;&lt; &quot;等于&quot; &lt;&lt; B &lt;&lt; &quot; &quot; &lt;&lt; &#39;\n&#39;;
+                }
+                cout &lt;&lt; &quot;*********************************&quot; &lt;&lt; &#39;\n&#39;;
+            }
+            //运算
+            else if(s1==&#39;$&#39;){
+                cin &gt;&gt; C;
+                if (C.flag == 0) {
+                    cout &lt;&lt; &quot;请再次输入1个合法的时间！&quot; &lt;&lt; &#39;\n&#39;;
+                    C.flag = 1;
+                    continue;
+                }
+                cout &lt;&lt; &quot;请输入操作:&quot; &lt;&lt; &#39;\n&#39;;
+                cin &gt;&gt; s2;
+                if (s2 == &quot;+&quot;) {
+                    cout &lt;&lt; &quot;输入推后的分钟数x：&quot; &lt;&lt; &#39;\n&#39;;
+                    cin &gt;&gt; x;
+                    C = C + x;
+                    cout &lt;&lt; C;
+                }
+                else if (s2 == &quot;-&quot;) {
+                    cout &lt;&lt; &quot;输入提前的分钟数x：&quot; &lt;&lt; &#39;\n&#39;;
+                    cin &gt;&gt; x;
+                    C = C - x;
+                    cout &lt;&lt; C;
+                }
+                else if (s2 == &quot;++&quot;) {
+                    ++C;
+                    cout &lt;&lt; C;
+                }
+                else if (s2 == &quot;--&quot;) {
+                    --C;
+                    cout &lt;&lt; C;
+                }
+                else {
+                    cout &lt;&lt; &quot;操作符输入错误，请再次输入时间！&quot; &lt;&lt; &#39;\n&#39;;
+                    continue;
+                }
+            }
+        }
+        return 0;
+    }
+
+    //重载运算符(2)
+
+    class Point {
+    private:
+        int x;//横坐标
+        int y;//纵坐标
+    public:
+        Point(int a,int b) :x(a), y(b) {};
+        void Display();
+        friend Point operator++(Point &amp;A);
+        friend Point operator++(Point &amp;A, int);
+        friend Point operator--(Point &amp;A);
+        friend Point operator--(Point &amp;A, int);
+    };
+    void Point::Display(){
+        cout &lt;&lt; &#39;(&#39; &lt;&lt; x &lt;&lt; &#39;,&#39; &lt;&lt; y &lt;&lt; &#39;)&#39; &lt;&lt; &#39;\n&#39;;
+    }
+     Point operator++(Point &amp;A) {
+         A.x++;
+         A.y++;
+         return A;
+    }
+     Point operator++(Point &amp;A, int) {
+         Point temp(A);
+         A.x ++;
+         A.y ++;
+         return temp;
+     }
+     Point operator--(Point &amp;A) {
+         A.x--;
+         A.y--;
+         return A;
+     }
+     Point operator--(Point &amp;A, int) {
+         Point temp(A);
+         A.x --;
+         A.y --;
+         return temp;
+     }
+     int main() {
+         int x, y;
+         cout &lt;&lt; &quot;输入A点横坐标、纵坐标，输入&#39;#&#39;结束输入：&quot; &lt;&lt; &#39;\n&#39;;
+         while (cin &gt;&gt; x &gt;&gt; y ||!&#39;#&#39;) {
+             Point A(x, y);
+             Point B(0, 0);
+             cout &lt;&lt; &quot;*********后置自增&quot; &lt;&lt; &#39;\n&#39;;
+             cout &lt;&lt; &quot;A=&quot;; A.Display();
+             B = A++;
+             cout &lt;&lt; &quot;A++=&quot;; B.Display();
+             cout &lt;&lt; &quot;*********后置自减&quot; &lt;&lt; &#39;\n&#39;;
+             cout &lt;&lt; &quot;A=&quot;; A.Display();
+             B = A--;
+             cout &lt;&lt; &quot;A-- =&quot;; B.Display();
+             cout &lt;&lt; &quot;*********前置自增&quot; &lt;&lt; &#39;\n&#39;;
+             cout &lt;&lt; &quot;A=&quot;; A.Display();
+             B = ++A;
+             cout &lt;&lt; &quot;++A=&quot;; B.Display();
+             cout &lt;&lt; &quot;*********前置自减&quot; &lt;&lt; &#39;\n&#39;;
+             cout &lt;&lt; &quot;A=&quot;; A.Display();
+             B = --A;
+             cout &lt;&lt; &quot;--A=&quot;; B.Display();
+
+         }
+         return 0;
+     }
+
+    //重载运算符(1)
+
+
+    class Matrix {
+    private:
+        int M[2][3]={0};
+    public:
+        Matrix( ) { }
+        friend ostream&amp; operator &lt;&lt;(ostream&amp; output, Matrix&amp; A) {
+            for (int i = 0; i &lt; 2; i++) {
+                for (int j = 0; j &lt; 3; j++) {
+                    output &lt;&lt; A.M[i][j];
+                    if (j != 2) {
+                        output &lt;&lt; &#39; &#39;;
+                    }
+                    else
+                    {
+                        output &lt;&lt; &#39;\n&#39;;
+                    }
+                }
+            }
+            return output;
+        }
+        friend istream&amp; operator &gt;&gt;(istream&amp; input, Matrix&amp; A) {
+            for (int i = 0; i &lt; 2; i++) {
+                for (int j = 0; j &lt; 3; j++) {
+                    input&gt;&gt; A.M[i][j];
+                }
+            }
+            return input;
+        }
+        friend Matrix operator + (Matrix &amp;a, Matrix &amp;b) {
+            Matrix c;
+            for (int i = 0; i &lt; 2; i++)
+            {
+                for (int j = 0; j &lt; 3; j++)
+                {
+                    c.M[i][j]=a.M[i][j] + b.M[i][j];
+                }
+            }
+            return c;
+        }
+        friend Matrix operator - (Matrix&amp; a, Matrix&amp; b) {
+            Matrix c;
+            for (int i = 0; i &lt; 2; i++)
+            {
+                for (int j = 0; j &lt; 3; j++)
+                {
+                    c.M[i][j] = a.M[i][j] - b.M[i][j];
+                }
+            }
+            return c;
+        }
+        friend Matrix operator ++(Matrix&amp; a) {
+            for (int i = 0; i &lt; 2; i++)
+            {
+                for (int j = 0; j &lt; 3; j++)
+                {
+                    a.M[i][j]++;
+                }
+            }
+            return a;
+        }
+        friend Matrix operator --(Matrix&amp; a) {
+            for (int i = 0; i &lt; 2; i++)
+            {
+                for (int j = 0; j &lt; 3; j++)
+                {
+                    a.M[i][j]--;
+                }
+            }
+            return a;
+        }
+        friend bool operator ==(Matrix&amp; a, Matrix&amp; b) {
+            for (int i = 0; i &lt; 2; i++)
+            {
+                for (int j = 0; j &lt; 3; j++)
+                {
+                    if (a.M[i][j] != b.M[i][j]) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+        friend bool operator !=(Matrix&amp; a,Matrix &amp;b) {
+            for (int i = 0; i &lt; 2; i++)
+            {
+                for (int j = 0; j &lt; 3; j++)
+                {
+                    if (a.M[i][j] == b.M[i][j]) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+    };
+    int main() {
+        Matrix A, B, C;
+        cout &lt;&lt; &quot;输入矩阵A与矩阵B,输入$计算开始：&quot; &lt;&lt; &#39;\n&#39;;
+        cin &gt;&gt; A&gt;&gt;B;
+        char t;
+        cin &gt;&gt; t;
+        if (t == &#39;$&#39;) {
+            cout &lt;&lt; &quot;********加法&quot; &lt;&lt; &#39;\n&#39;;
+            C = A + B;
+            cout &lt;&lt; C;
+            cout &lt;&lt; &quot;********减法&quot; &lt;&lt; &#39;\n&#39;;
+            C = A - B;
+            cout &lt;&lt; C;
+            cout &lt;&lt; &quot;********A自增&quot; &lt;&lt; &#39;\n&#39;;
+            C = ++A;
+            cout &lt;&lt; C;
+            cout &lt;&lt; &quot;********B自减&quot; &lt;&lt; &#39;\n&#39;;
+            C = --B;
+            cout &lt;&lt; C;
+            cout &lt;&lt; &quot;********A与B是否相等&quot; &lt;&lt; &#39;\n&#39;;
+            int flag = 2;
+            if (A == B) {
+                flag = 1;
+                cout &lt;&lt; flag&lt;&lt;&#39;\n&#39;;
+                cout &lt;&lt; &quot;A矩阵与B矩阵相等&quot; &lt;&lt; &#39;\n&#39;;
+            }
+            else if (A != B) {
+                flag = 0;
+                cout &lt;&lt; flag&lt;&lt;&#39;\n&#39;;
+                cout &lt;&lt; &quot;A矩阵与B矩阵不相等&quot; &lt;&lt; &#39;\n&#39;;
+            }
+        }
+        return 0;
+    }
+
+
+    /*类与对象（3）；*/
+
+    class imaginary {
+    private:
+        double x;//实部;
+        double y;//虚部;
+    public:
+        imaginary() {
+            x = 0;
+            y = 0;
+        }
+        imaginary(double a, double b) {
+            x = a;
+            y = b;
+            //重载构造函数，传入参数a和b;
+        }
+        friend imaginary add(imaginary *imag1, imaginary *imag2) {
+            double x1 = imag1-&gt;x + imag2-&gt;x;
+            double y1 = imag1-&gt;y + imag2-&gt;y;
+            imaginary ans = imaginary(x1, y1);
+            return ans;
+        }
+        friend imaginary sub(imaginary *imag1, imaginary *imag2) {
+            double x2 = imag1-&gt;x - imag2-&gt;x;
+            double y2 = imag1-&gt;y - imag2-&gt;y;
+            imaginary ans = imaginary(x2, y2);
+            return ans;
+        }
+        friend imaginary mul(imaginary *imag1, imaginary *imag2) {
+            double x3 = imag1-&gt;x * imag2-&gt;x - imag1-&gt;y * imag2-&gt;y;
+            double y3 = imag1-&gt;y * imag2-&gt;x + imag1-&gt;x * imag2-&gt;y;
+            imaginary ans = imaginary(x3, y3);
+            return ans;
+        }
+        friend imaginary div(imaginary *imag1, imaginary *imag2) {
+            double x4 = (imag1-&gt;x * imag2-&gt;x + imag1-&gt;y * imag2-&gt;y) / (imag2-&gt;x * imag2-&gt;x + imag2-&gt;y * imag2-&gt;y);
+            double y4 = (imag1-&gt;y * imag2-&gt;x - imag1-&gt;x * imag2-&gt;y) / (imag2-&gt;x * imag2-&gt;x + imag2-&gt;y * imag2-&gt;y);
+            imaginary ans = imaginary(x4, y4);
+            return ans;
+        }
+        void static show(imaginary *ptr);
+    };
+    void imaginary::show(imaginary *ptr) {
+        if (ptr-&gt;x == 0) {
+            cout &lt;&lt; ptr-&gt;y &lt;&lt; &#39;i&#39;;
+        }
+        else if (ptr-&gt;y &lt; 0) {
+            cout &lt;&lt; ptr-&gt;x &lt;&lt; ptr-&gt;y &lt;&lt; &#39;i&#39;;
+        }
+        else if (ptr-&gt;y &gt; 0) {
+            cout &lt;&lt; ptr-&gt;x &lt;&lt; &#39;+&#39; &lt;&lt; ptr-&gt;y &lt;&lt; &#39;i&#39;;
+        }
+        else {
+            cout &lt;&lt; ptr-&gt;x;
+        }
+        cout &lt;&lt; &#39;\n&#39;;
+    }
+    int main()
+    {
+        cout.setf(ios_base::fixed), cout.precision(2);
+        char s;
+        double a, b, c, d;
+        while (cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d &gt;&gt; s) {
+            imaginary x(a, b), y(c, d);
+            imaginary ans;
+            if (s == &#39;+&#39;) {
+                ans = add(&amp;x, &amp;y);
+            }
+            else if (s == &#39;-&#39;) {
+                ans = sub(&amp;x, &amp;y);
+            }
+            else if (s == &#39;*&#39;) {
+                ans = mul(&amp;x, &amp;y);
+            }
+            else {
+                ans = div(&amp;x, &amp;y);
+            }
+            ans.show(&amp;ans);
+
+        }
+        return 0;
+    }
+
+    /*类与对象（2）;*/
+
+    class TEST{
+    public:
+        TEST() { cout&lt;&lt; &quot;调用构造函数&quot; &lt;&lt; endl;
+                    x = 2; y = 50; z = 9; }
+        TEST( int a,int b,int c ) {
+            cout &lt;&lt; &quot;调用重载构造函数&quot;&lt;&lt; endl;
+            x = a; y = b; z = c;
+        }
+        void display(){
+            cout &lt;&lt; &quot;x=&quot; &lt;&lt; x &lt;&lt; &#39;\t&#39; &lt;&lt; &quot;y=&quot; &lt;&lt; y &lt;&lt;&#39;\t&#39; &lt;&lt; &quot;z=&quot; &lt;&lt; z &lt;&lt; endl;
+        }
+        int max( int a,int b ){
+            if ( a&gt;b ) return a;  else return b;
+        }
+        ~TEST( ){
+            cout &lt;&lt; &quot;调用析构函数&quot; &lt;&lt; endl;
+            cout &lt;&lt; x &lt;&lt; &quot;,&quot; &lt;&lt; y &lt;&lt;&quot;和&quot; &lt;&lt; z &lt;&lt; &quot;最大值是:&quot; &lt;&lt; max( max( x,y ),z) &lt;&lt; endl;
+        }
+        private:
+        int x,y,z;
+    };
+
+    void main()
+    {
+        TEST obj1;
+        obj1.display ( ) ;
+        TEST obj2( 33, 20, 80);
+        obj2.display();
+    }
+
+    /*类与对象（1）；*/
+    class Score{
+    private:
+        int num;//学号
+        int Math, English, Programming;//数学，英语，程序设计
+        double avg;//平均成绩
+    public:
+        const int interval = 15;//setw的间隔
+        void inscore();
+        void showscore();
+        Score() :num(0), Math(0), English(0), Programming(0), avg(0) {};//数据初始化
+    };
+    void Score::inscore() {
+        cout &lt;&lt; &quot;输入学号:&quot;;
+        cin &gt;&gt; num;
+        cout &lt;&lt; &quot;输入高等数学成绩:&quot;;
+        cin &gt;&gt; Math;
+        cout &lt;&lt; &quot;输入大学英语成绩:&quot;;
+        cin &gt;&gt; English;
+        cout &lt;&lt; &quot;输入程序设计成绩:&quot;;
+        cin &gt;&gt; Programming;
+        avg = (Math + English + Programming) / 3;
+    }
+    void Score::showscore() {
+        cout &lt;&lt; setw(5) &lt;&lt; &quot;学生学号&quot; &lt;&lt; setw(interval) &lt;&lt; &quot;高等数学成绩&quot; &lt;&lt; setw(interval) &lt;&lt; &quot;大学英语成绩&quot; &lt;&lt; setw(interval) &lt;&lt; &quot;程序设计成绩&quot; &lt;&lt; setw(interval) &lt;&lt; &quot;平均成绩&quot; &lt;&lt; &#39;\n&#39;;
+        cout &lt;&lt; setw(5) &lt;&lt; num &lt;&lt; setw(interval) &lt;&lt; Math &lt;&lt; setw(interval) &lt;&lt; English &lt;&lt; setw(interval) &lt;&lt; Programming &lt;&lt; setw(interval) &lt;&lt; avg &lt;&lt; &#39;\n&#39;;
+    }
+    int main()
+    {
+        ios::sync_with_stdio(false); cin.tie(0);cout.tie(0);
+        cout.setf(ios_base::fixed), cout.precision(2);
+        int n;
+        cout &lt;&lt; &quot;学生数量：&quot;;
+        cin &gt;&gt; n;
+        Score* k = new Score[n];
+        for (int i = 0; i &lt; n; i++)
+        {
+            k[i].inscore();
+        }
+        for (int j = 0; j &lt; n; j++)
+        {
+            k[j].showscore();
+        }
+        delete[]k;
+        return 0;
+    }
+
+
+</code></pre>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 Gitalk -->
+<div id="gitalk-comment">
+    <!-- Gitalk 评论框 -->
+<div id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="/js/md5.min.js"></script>
+<script>
+    var gitalk = new Gitalk({
+            clientID: '642fa9d4f72b659b4fc5',
+            clientSecret: 'e43d80361b6474a875add007aecf8740334a4b40',
+            repo: 'blogtalk',
+            owner: 'RhInEs-liao',
+            admin: ['RhInEs-liao'],
+            // facebook-like distraction free mode
+			id: md5(location.pathname),
+            distractionFreeMode: false
+			
+        })
+   gitalk.render('gitalk-container')
+</script>
+</div>
+<style>
+    #gitalk-comment {
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2020/04/02/hello-world/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="RhInEs-liao's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        firebinvc@qq.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto:firebinvc@qq.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2020/07/">七月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/04/">四月 2020<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                
+            </ul>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">2</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="http://www.github.com/RhInEs-liao" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;2020&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>RhInEs' Blog
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- GitTalk -->
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+    
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?Pki5+pzkluqu53g+ouMWpA==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
